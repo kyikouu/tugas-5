@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Career Finder ⭐ — Temukan Karier Impianmu</title>
+<meta name="description" content="Pilih minatmu dan temukan karier yang paling cocok, lengkap dengan gaji, skill, dan roadmap belajarnya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars" id="starField" aria-hidden="true"></div>
+
+<div class="page">
+
+  <header class="topbar">
+    <span class="badge">✨ Career Quiz</span>
+    <h1>Dream Career <span class="grad">Finder</span> ⭐</h1>
+    <p class="tagline">Pilih minatmu, biar kami petakan karier yang paling cocok buatmu.</p>
+  </header>
+
+  <section class="interest-section" aria-label="Pilih minatmu">
+    <h2>Minat kamu apa aja? <span class="hint">(boleh lebih dari satu)</span></h2>
+    <div class="interest-grid" id="interestGrid">
+      <button class="interest-btn" data-interest="desain" type="button" style="--c: var(--c-desain)">
+        <span class="ico" aria-hidden="true">🎨</span>
+        <span>Desain</span>
+      </button>
+      <button class="interest-btn" data-interest="coding" type="button" style="--c: var(--c-coding)">
+        <span class="ico" aria-hidden="true">💻</span>
+        <span>Coding</span>
+      </button>
+      <button class="interest-btn" data-interest="matematika" type="button" style="--c: var(--c-matematika)">
+        <span class="ico" aria-hidden="true">🔢</span>
+        <span>Matematika</span>
+      </button>
+      <button class="interest-btn" data-interest="bisnis" type="button" style="--c: var(--c-bisnis)">
+        <span class="ico" aria-hidden="true">💼</span>
+        <span>Bisnis</span>
+      </button>
+    </div>
+
+    <button class="find-btn" id="findBtn" type="button" disabled>
+      🔮 Temukan Karier Impianmu
+    </button>
+  </section>
+
+  <section class="results-section" id="resultsSection" aria-label="Hasil rekomendasi karier">
+    <p class="placeholder" id="placeholder">Pilih minimal satu minat di atas, lalu klik tombolnya buat lihat hasilnya ✨</p>
+    <div class="results-head" id="resultsHead" hidden>
+      <h2>Karier paling cocok buat kamu</h2>
+      <button class="reset-btn" id="resetBtn" type="button">↺ Ulangi</button>
+    </div>
+    <div class="career-list" id="careerList"></div>
+  </section>
+
+  <footer>
+    <p>Gaji &amp; roadmap adalah estimasi umum di Indonesia, bisa berbeda tergantung kota, perusahaan, dan pengalaman.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
